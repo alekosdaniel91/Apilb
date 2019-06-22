@@ -1,5 +1,5 @@
 {
-  "name": "UserDoucument",
+  "name": "Userdocument",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -7,6 +7,10 @@
   },
   "properties": {
     "UserID": {
+      "type": "number",
+      "required": true
+    },
+    "TypeDocumentID": {
       "type": "number",
       "required": true
     },

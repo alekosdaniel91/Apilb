@@ -24,10 +24,6 @@
     "isMilitar": {
       "type": "boolean",
       "default": false
-    },
-    "id": {
-      "type": "boolean",
-      "required": true
     }
   },
   "validations": [],
