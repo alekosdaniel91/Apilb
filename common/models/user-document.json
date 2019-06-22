@@ -26,7 +26,21 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "appUsers": {
+      "type": "hasOne",
+      "model": "AppUser",
+      "foreignKey": "UserID"
+    },
+    "typeDocuments": {
+      "type": "hasOne",
+      "model": "TypeDocument",
+      "foreignKey": "TypeDocumentID",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -27,7 +27,21 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "contactinfo": {
+      "type": "belongsTo",
+      "model": "Contactinfo",
+      "foreignKey": "UserID",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "userdocument": {
+      "type": "belongsTo",
+      "model": "Userdocument",
+      "foreignKey": "UserID"
+    }
+  },
   "acls": [],
   "methods": {}
 }

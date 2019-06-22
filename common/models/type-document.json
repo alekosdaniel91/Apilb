@@ -15,7 +15,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "userdocument": {
+      "type": "belongsTo",
+      "model": "Userdocument",
+      "foreignKey": "TypeDocumentID",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

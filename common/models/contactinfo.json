@@ -42,7 +42,24 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "countries": {
+      "type": "hasOne",
+      "model": "Country",
+      "foreignKey": "CountryID",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "appUsers": {
+      "type": "hasOne",
+      "model": "AppUser",
+      "foreignKey": "UserID",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
