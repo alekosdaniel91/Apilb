@@ -1,0 +1,37 @@
+{
+  "name": "AppUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "LastName": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "TimeCreate": {
+      "type": "date"
+    },
+    "isTemporal": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "isMilitar": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

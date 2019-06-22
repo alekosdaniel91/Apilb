@@ -1,0 +1,48 @@
+{
+  "name": "Contactinfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "UserID": {
+      "type": "number",
+      "required": true
+    },
+    "Address": {
+      "type": "string",
+      "required": true
+    },
+    "CountryID": {
+      "type": "number",
+      "required": true
+    },
+    "City": {
+      "type": "string",
+      "required": true
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "CelPhone": {
+      "type": "string",
+      "required": true
+    },
+    "EmergencyName": {
+      "type": "string",
+      "required": true
+    },
+    "EmergencyPhone": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
