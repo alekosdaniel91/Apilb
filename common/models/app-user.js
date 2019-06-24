@@ -23,7 +23,7 @@ AppUser.prototype.prueba = function(data, callback) {
         res.push(AppUser.prototype.userdocument.create(data))
         resolve (res)
     });
-    User.then(contact).catch(e=>console.log(e));
+    User.then(contact.then(document)).catch(e=>console.log(e));
     callback(null, [res]);
 };
 
