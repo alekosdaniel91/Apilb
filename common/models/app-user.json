@@ -48,7 +48,40 @@
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "prueba"
     }
   ],
-  "methods": {}
+  "methods": {
+    "prototype.prueba": {
+      "accepts": [
+        {
+          "arg": "data",
+          "type": "array",
+          "required": true,
+          "description": "data"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "res",
+          "type": "array",
+          "root": true,
+          "description": "salida"
+        }
+
+      ],
+      "description": "metodo de prueba",
+      "http": [
+        {
+          "path": "/dataforms",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }

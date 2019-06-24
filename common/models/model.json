@@ -1,0 +1,18 @@
+{
+    "LastName": "prueba12",
+    "Name": "prueba12",
+    "TimeCreate": "2019-06-24T14:24:34.397Z",
+    "isTemporal": false,
+    "isMilitar": false,
+    "username": "prueba12",
+    "email": "prueba12@prueba12.co",
+    "password": "prueba12",
+    "Address": "prueba12",
+    "CountryID": 0,
+    "City": "prueba12",
+    "Phone": "prueba12",
+    "CelPhone": "prueba12",
+    "EmergencyName": "prueba12",
+    "EmergencyPhone": "prueba12",
+    "UserID":1 
+}
