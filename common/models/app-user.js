@@ -9,6 +9,7 @@ module.exports = function(AppUser) {
 
 AppUser.prototype.prueba = function(data, callback) {
     let res=[];
+
     let User = new Promise((resolve, reject)=>{
         res.push(AppUser.create(data))
         resolve (res)});
@@ -18,6 +19,10 @@ AppUser.prototype.prueba = function(data, callback) {
         resolve (res)
     });
     
+    let document = new Promise((resolve, reject)=>{
+        res.push(AppUser.prototype.userdocument.create(data))
+        resolve (res)
+    });
     User.then(contact).catch(e=>console.log(e));
     callback(null, [res]);
 };
